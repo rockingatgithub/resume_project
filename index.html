@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sudhendra Singh</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://kit.fontawesome.com/1fd8038f9b.js" crossorigin="anonymous"></script>
+	
+	<meta charset="UTF-8">
+	<meta name="description" content="Free Web tutorials">
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<meta name="author" content="John Doe">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<header id="body-header">
+	<!-- first is the navigation bar of my resume project -->
+	<nav> <ul class="horizontal-list text-center nav-menu ">
+		<li><a href="Home" onclick="funscroll(1)">Home</a></li>
+		<li><a href="#about" onclick="funscroll(2)">About</a></li>
+		<li><a href="#skills" onclick="funscroll(3)">Skills</a></li>
+		<li><a href="#experience" onclick="funscroll(4)">Experience</a></li>
+		<li><a href="#education" onclick="funscroll(5)">Education</a></li>
+		<li><a href="#portfolio" onclick="funscroll(6)">Portfolio</a></li>
+		<li><a href="#contact" onclick="funscroll(7)">Contact</a></li>
+	</ul></nav>
+	<!-- the next line represent the name -->
+	<div id="name-social-container">
+		<div class="text-center"><h1 id="my-name">Sudhendra Singh</h1></div>
+	</div>
+	<!-- next is the social-media icons -->
+	<div>
+	<ul class="horizontal-list text-center social-icons">
+		<li><a><i class="fab fa-facebook-f"></i></a></li>
+		<li><a><i class="fab fa-linkedin-in"></i></a></li>
+		<li><a><i class="fab fa-twitter"></i></a></li>
+		<li><a><i class="fas fa-inbox"></i></a></li>
+		<li><a><i class="fab fa-whatsapp"></i></a></li>
+		<li><a><i class="fab fa-stack-overflow"></i></a></li>
+	</ul>
+</div>
+</header>
+<!-- now is the about section of my resume-project -->
+<main>
+
+	<section id="about">
+		<img id="img-tag" src="https://img.techpowerup.org/200716/sudhendra-singh1.jpg">
+		<p class="text-center"> I am sudhendra kumar singh .i want to be a web-developer</p>
+	</section>
+
+	<section id="skills">
+			<h4 class="text-center mb75px">
+				<span><img class=" section-icon" src="https://img.techpowerup.org/200716/skills.png"></span>
+				<span>SKILLS</span>	
+			</h4>
+			<div id="skill-container">
+				<div class="progress-div">
+					<div class="eighty-five" data-bar-width="85">
+					<div class="skill-name">C++</div></div></div>
+				<div class="progress-div">
+					<div class="sixty-two" data-bar-width="62">
+					<div class="skill-name">JAVA</div></div></div>
+				<div class="progress-div">
+					<div class="forty" data-bar-width="40">
+					<div class="skill-name">CSS</div></div></div>
+				<div class="progress-div">
+					<div class="fifty" data-bar-width="50">
+					<div class="skill-name">HTML</div></div></div>
+				<div class="progress-div">
+					<div class="ninty" data-bar-width="90">
+					<div class="skill-name">DBMS</div></div></div>
+				<div class="progress-div">
+					<div class="sixty-five" data-bar-width="65">
+					<div class="skill-name">NODE.JS</div></div></div>
+			</div>
+	</section>
+
+	<section id="experience">
+		<h4 class="text-center mb75px">
+			<span><i class="fas fa-briefcase"></i></span>
+			<span>Experience</span>	
+		</h4>
+		<div class="timeline">
+			<div class="timeline-box">
+					<h5 class="colorb boldhead"> Class X</h5>
+					<h6 class="coloro boldhead">Divine Public school</h6>
+					<h6 class="coloro boldhead">may-march</h6>
+					<p class="timeline-para">we will be disscussing</p>
+				</div>
+				<div class="timeline-box">
+					<h5 class="colorb boldhead"> Class XII</h5>
+					<h6 class="coloro boldhead">Divine Public school</h6>
+					<h6 class="coloro boldhead">march-may</h6>
+					<p class="timeline-para">we will be disscussing</p>
+				</div>
+				<div class="timeline-box">
+					<h5 class="colorb boldhead"> Btech.Cse</h5>
+					<h6 class="coloro boldhead">Amity University</h6>
+					<h6 class="coloro boldhead">march-may</h6>
+					<p class="timeline-para">we will be disscussing</p>
+				</div>
+				<div class="timeline-box">
+					<h5 class="colorb boldhead"> Web-developer</h5>
+					<h6 class="coloro boldhead">Coding Ninjas</h6>
+					<h6 class="coloro boldhead">may-march</h6>
+					<p class="timeline-para">we will be disscussing</p>
+				</div>
+				<div class="timeline-divider">
+					<div class="timeline-traveller">
+						<i class="fas fa-plane"></i>
+						</div>
+				</div>
+			</div>
+	</section>
+
+	<section id="education">
+
+	</section>
+
+	<section id="portfolio">
+
+	</section>
+
+	<section id="contact">
+		<h4 class="text-center mb30px">
+			<span><img class="section-icon" src="https://img.techpowerup.org/200716/agenda.png"></span>
+			<span style="color: ghostwhite;">Contact</span>
+		</h4>
+		<div id="contact-container">
+			<div id="contact-form">
+				<form id="form-element">
+					<span><input placeholder="Your Name"></input></span>
+					<span><input placeholder="Your Email"></input></span>
+					<span><input placeholder="Message"></input></span>
+					<span><button type="submit">SEND MESSAGE</button></span>
+					</form>
+			</div>
+			<div id="address">
+				<div id="get-in-touch" class="mlclass">
+					<h5 class="get-in">Get In Touch</h5>
+					<p class="get-in">Mostly on coding platform</p>
+				</div>
+				<div id="my-address" class="mlclass">
+					<h5 class="get-in">My Address</h5>
+					<span class="address-class"><img src="https://img.techpowerup.org/200716/location.png"><span class="get-in">GURGAON</span></span>
+					<span class="address-class"><img src="rhttps://img.techpowerup.org/200716/phone.png"><span class="get-in">9999999999</span></span>
+					<span class="address-class"><img src="https://img.techpowerup.org/200716/gmail.png"><span class="get-in">google@doodle.com</span></span>
+				</div>
+				</div>
+				<!-- next is the social-media icons -->
+	<div>
+		<ul class="horizontal-list text-center social-icons">
+			<li><a><i class="fab fa-facebook-f"></i></a></li>
+			<li><a><i class="fab fa-linkedin-in"></i></a></li>
+			<li><a><i class="fab fa-twitter"></i></a></li>
+			<li><a><i class="fas fa-inbox"></i></a></li>
+			<li><a><i class="fab fa-whatsapp"></i></a></li>
+			<li><a><i class="fab fa-stack-overflow"></i></a></li>
+		</ul>
+	</div>
+	</section>
+
+</main>
+<script src="script.js"></script>
+</body>
+
+</html>

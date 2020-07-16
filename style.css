@@ -1,0 +1,364 @@
+/*to give no space between the header and page*/
+body{
+    margin: 0px;
+    font-family:sans-serif;
+    font-size: 30px;
+}
+/*body header*/
+#body-header{
+	background-image: url(resources/macbook_mouse.jpg);
+	opacity: 0.8;
+	background-attachment: fixed;   /*slide the image along with page*/
+	background-size: cover;        /*cover the header part*/
+	background-position: center;   /*positioned in center*/
+    height: 65vh;       /*the height of header*/
+    padding-top: 1.2rem;  /*nav bar padding */
+}
+.horizontal-list {
+	list-style:  none;   /*no bulleting in list*/
+    padding-left: 0px;   /*no padding to left element*/
+    margin: 0px;        /*no margin with other element*/
+}
+.horizontal-list li{
+	display: inline-block; /*to display items in single line*/
+    margin:0px 8px 8px 0px;  /*margin between elements*/
+    font-weight: 100;  
+    font-size: 0.9rem;  
+}
+.horizontal-list li a{
+	text-decoration: none;    /*to remove underline from anchor tags*/
+	color: white;
+}
+.nav-menu li a{
+    transition: color 0.5s, border-bottom 4s;  /*to add transition to them*/
+}
+.nav-menu li a:hover{
+	color: lightgrey;
+	border-bottom: 1px solid white;
+
+}
+.text-center{
+	text-align: center;   /*to align element to center*/
+}
+
+
+
+/*name and social container...*/
+#my-name{
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 0.5rem;  /*space before necxt element*/
+}
+#name-social-container{
+    margin-top: 20vh;
+}
+
+
+/*for social icons*/
+.social-icons li{
+    border-radius: 50px; /*to make social icons round*/
+}
+.social-icons li a i{
+    padding:10px;
+    font-size: 1rem;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+}
+.social-icons li a i:hover{
+    box-shadow: 0px 0px 6px 4px rgba(230,196,196,0.3);   /*providing shadow to social icons*/
+    color: rgb(233, 103, 71);
+}
+/* #main-image{
+    background-attachment: fixed;
+    background-position: center;
+    /* background-size: contain; 
+    
+} */
+#about img{
+    margin-top: -50px;      /*to overlap on header background*/
+    position: relative;  /*relative to it's parent that is body tag*/
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+#img-tag{
+     height:210px;
+    width: 210px;
+    border-radius:50%;   /*to make image round*/
+    display: block;      /*as the image is inline*/
+    margin-left: auto;   /*set margin as required*/
+    margin-right:auto;
+    opacity: 1;          /*to completely display image*/
+    /* width: 50%; */
+}
+
+
+
+
+/*adding flex to sections*/
+section{
+    width: 100%;
+    display: flex;  /*all section are now flex-items*/
+    flex-direction: column; /*sections are reprsented along column*/
+    align-items: center;
+}
+section:nth-child(2n+1){   /*for coloring alternating section in different color....*/
+    background-color: white;
+}
+section:nth-child(2n)
+{
+    background-color: #faf5f5;
+}
+.mb75px{
+    margin-bottom: 75px;
+}
+h4{
+    width: auto;
+    padding: 20px 10px 10px;
+    font-weight: 400;
+}
+h4 span{
+    font-size: 30px;
+    display: inline-block;
+    color: #2857a4;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+    height: 30px;
+}
+.section-icon{
+    height: 40px;
+    width: 40px;
+}
+#skill-container{
+    width:70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#contact-container{
+    width:100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+#contact{
+    background-image: linear-gradient(to top right, blue, purple,red);
+    padding-top: 25px;
+}
+/*we will set pogress for different skills*/
+.progress-div{
+    height:1.4rem;
+    width: 7rem;
+    border-radius: 0.8rem;
+    background-color:rgb(240, 223, 223);
+    /* border:2px ridge black; */
+    margin:30px 80px 30px 80px;
+}
+.skill-name{
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    margin-left: 10px;
+    height:1.2rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.progress-div>div{
+    border-radius: 20px 0px 0px 20px;
+}
+.eighty-five{
+    height: inherit;
+    width:85%;
+    background-color:rgba(73, 167, 230, 0.6);
+}
+.sixty-two{
+    height: inherit;
+    width:62%;
+    background-color:rgba(233, 124, 60, 0.6);
+}
+.forty{
+    height: inherit;
+    width:40%;
+    background-color:rgba(230, 73, 159,0.6);
+}
+.fifty{
+    height: inherit;
+    width:50%;
+    background-color:rgba(73, 230, 165, 0.6);
+}
+.ninty{
+    height: inherit;
+    width:90%;
+    background-color:rgba(162, 230, 73, 0.6);
+}
+.sixty-five{
+    height: inherit;
+    width:65%;
+    background-color:rgba(230, 136, 73, 0.6);
+}
+/*form element of contact*/
+#contact form{
+    width:50%;
+    padding: 50px;
+}
+#address{
+    width: 50%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#form-element span{
+    display: block;
+    margin:30px 30px 30px 0px;
+}
+.get-in{
+    color:white;
+    font-size: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+}
+/*for contact form*/
+input {
+    width: 400px;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    opacity: 0.5;
+}
+button{
+    width: 150px;
+    height: 20px;
+    opacity: 0.5;
+    margin:auto;
+}
+/**/
+.address-class{
+    padding: 10px;
+    display: block;
+}
+.address-class img{
+    height: 20px;
+    width: 20px;
+    margin:0px 10px 0px 0px;
+}
+/*margin left class*/
+.mlclass{
+    margin-left: 0px;
+}
+/*margin bottom 40px*/
+.mb40px{
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+}
+.timeline{
+    position: relative;
+    width: 75%;
+    /* border: 2px solid black; */
+}
+.timeline-box{
+    position: relative;
+    margin: 5px;
+    width: 40%;
+    left: 5%;
+    min-height: 150px;
+    /* border: 2px solid black; */
+}
+.timeline-box:nth-child(2n)
+{
+    left: 53%;
+    text-align: left;
+}
+.timeline-box:nth-child(2n+1)
+{
+    text-align: right;
+}
+.colorb{
+    color: rgb(16, 93, 194);
+    margin: 0px;
+    font-family: cursive;
+}
+.coloro{
+    color: coral;
+    margin: 0px;
+}
+.colorg{
+    color: darkgray;
+    font-family: monospace;
+    font-size: 0.8rem;
+    display: inline-block;
+    margin: 0px;
+}
+.boldhead{
+    font-weight: bold;
+}
+.colorb:nth-child(2n+1)::before
+{
+    content: '';
+    display: inline-block;
+    background-image: url(resources/school-solid.svg);
+    height: 25px;
+    width: 25px;
+}
+.colorb:nth-child(2n)::after
+{
+    content: '';
+    display: inline-block;
+    background-image: url(resources/university-solid.svg);
+    height: 25px;
+    width: 25px;
+}
+.timeline-para{
+    font-size: 0.8rem;
+    color: darkslategray;
+}
+.timeline-divider{
+    position: absolute;
+    height: 75%;
+    top:10%;
+    width:0;
+    border: 2px dotted rgb(207, 231, 231);
+    left:50%;
+}
+.timeline-traveller{
+    position: sticky;
+    top: 20%;
+    transform: rotate(90deg);
+    z-index: 2;
+}
+.timeline-box:nth-child(2n)::after{
+    content: '';
+    border-radius: 50%;
+    top:30%;
+    left:-9%;
+    position: absolute;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: darkgray;
+    z-index: 1;
+}
+.timeline-box:nth-child(2n+1)::after{
+    content: '';
+    border-radius: 50%;
+    top:40%;
+    right:-12%;
+    position: absolute;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: darkgray;
+    z-index: 1;
+}
+@media screen and (max-width:300px)
+{
+    .timeline-box{
+        width: 90%;
+    }
+    .timeline-box:nth-child(2n)
+    {
+        left: inherit;
+    }
+}
